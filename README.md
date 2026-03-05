@@ -4,6 +4,10 @@ Portafolio personal desarrollado con HTML, CSS y JavaScript puro.
 
 Este sitio presenta mi perfil profesional, habilidades tecnicas, certificaciones, proyectos destacados y galeria de participaciones en eventos.
 
+## Link del Proyecto
+- GitHub: `https://bylev.github.io/Portafolio/`
+---
+
 ## Vista General
 
 - Diseño responsivo (desktop, tablet y mobile)
@@ -57,8 +61,7 @@ python -m http.server 5500
 
 Luego abrir:
 
-`http://localhost:5500`
-
+```http://localhost:5500/Portafolio/```
 ## Personalizacion Rapida
 
 - Nombre y rol principal: `index.html`

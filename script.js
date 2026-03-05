@@ -79,6 +79,7 @@ const translations = {
 		"nav.contact": "Contact",
 		"home.greeting": "HI!",
 		"home.title": "I'm <span>Michelle</span>",
+		"home.cta": "Let's!",
 		"home.roleMain": "Software Development Student",
 		"home.roleSub": "Computational Robotics Engineer",
 		"home.description":
