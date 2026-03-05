@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">michi<span>'s </span></a>
+
+    <nav class="navbar">
+      <a href="#home" class="active" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+      <a href="#certificados" data-i18n="nav.certificates">Certificados</a>
+      <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galeria</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-controls">
+      <select id="lang-toggle" class="lang-toggle" aria-label="Seleccionar idioma">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
+
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Activar modo dia"
+        role="switch"
+        aria-checked="false"
+      >
+        <span class="switch-icon moon" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+        <span class="switch-thumb" aria-hidden="true"></span>
+        <span class="switch-icon sun" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1 data-i18n="home.title" data-i18n-html="true">I'm <span>Michelle</span></h1>
+      <h3 class="role-main" data-i18n="home.roleMain">Estudiante de Desarrollo de Software</h3>
+      <p class="role-sub" data-i18n="home.roleSub">Ingeniera en Robotica Computacional</p>
+
+      <div class="home-actions">
+        <a href="#contact" class="btn" data-i18n="home.cta">Let's talk!</a>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/michelle-c%C3%A1mara-gonz%C3%A1lez-a55a1421b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-image">
+      <div class="image-ring">
+        <img src="img/icon.jpg" alt="Michelle profile picture" />
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title" data-i18n="about.title" data-i18n-html="true">About <span>Me</span></h2>
+
+    <div class="about-image">
+      <div class="image-ring small">
+        <img src="img/icon.jpg" alt="Michelle about image" />
+      </div>
+    </div>
+
+    <div class="about-content">
+      <h3 class="role-main" data-i18n="about.roleMain">Estudiante de Desarrollo de Software</h3>
+      <p class="role-sub about-role-sub" data-i18n="about.roleSub">Ingeniera en Robotica Computacional</p>
+      <p class="about-text" data-i18n="about.description">
+        Me gusta que me llamen "Michi", y soy apasionada por la programacion, el diseno y el aprendizaje constante. Disfruto participar en proyectos de desarrollo de software y tecnologia, trabajar en equipo, resolver desafios y aportar ideas creativas para construir soluciones utiles.
+      </p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="section-title" data-i18n="skills.title" data-i18n-html="true">My <span>Skills</span></h2>
+
+    <div class="skills-list">
+      <div class="skill-item">
+        <p>Python</p>
+      </div>
+
+      <div class="skill-item">
+        <p>Java</p>
+      </div>
+
+      <div class="skill-item">
+        <p>POO</p>
+      </div>
+
+      <div class="skill-item">
+        <p>Bash/Linux</p>
+      </div>
+
+      <div class="skill-item">
+        <p>QA</p>
+      </div>
+
+      <div class="skill-item">
+        <p>Cloud Foundations</p>
+      </div>
+
+      <div class="skill-item">
+        <p>Git/GitHub</p>
+      </div>
+
+      <div class="skill-item">
+        <p>SQL</p>
+      </div>
+
+      <div class="skill-item">
+        <p>Microcontrollers</p>
+      </div>
+
+      <div class="skill-item">
+        <p>English B2</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="certificates" id="certificados">
+    <h2 class="section-title" data-i18n="certificates.title" data-i18n-html="true">Mis <span>Certificados</span></h2>
+    <p class="portfolio-text" data-i18n="certificates.description">
+      Certificaciones destacadas alineadas a mi perfil en software, cloud, IA y bases de datos.
+    </p>
+
+    <div class="portfolio-carousel certificates-carousel" id="certificates-carousel">
+      <button class="carousel-btn prev" id="certificates-prev" type="button" aria-label="Certificado anterior">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+
+      <div class="portfolio-viewport certificates-viewport">
+        <div class="portfolio-track certificates-track" id="certificates-track">
+          <article class="certificate-card">
+            <h3>SQL (Basic)</h3>
+            <p class="certificate-issuer">HackerRank</p>
+            <p class="certificate-date">Feb 2026</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Java (Basic)</h3>
+            <p class="certificate-issuer">HackerRank</p>
+            <p class="certificate-date">Dec 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Introduction to SQL</h3>
+            <p class="certificate-issuer">DataCamp</p>
+            <p class="certificate-date">Nov 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Introduction to Large Language Models (LLM)</h3>
+            <p class="certificate-issuer">Google</p>
+            <p class="certificate-date">Oct 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Introduction to Generative AI</h3>
+            <p class="certificate-issuer">Google</p>
+            <p class="certificate-date">Oct 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>AWS Academy Graduate - Cloud Operations (Cloud1)</h3>
+            <p class="certificate-issuer">Amazon Web Services (AWS)</p>
+            <p class="certificate-date">May 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>AWS Academy Cloud Foundations</h3>
+            <p class="certificate-issuer">Amazon Web Services (AWS)</p>
+            <p class="certificate-date">Mar 2025</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Mastering Microcontroller: Timers, PWM, CAN, Low Power (MCU2)</h3>
+            <p class="certificate-issuer">Udemy</p>
+            <p class="certificate-date">Oct 2024</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Cisco Certifications</h3>
+            <p class="certificate-issuer">Cisco</p>
+            <p class="certificate-date">Aug 2024</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Google IT Support Professional Certificate</h3>
+            <p class="certificate-issuer">Coursera</p>
+            <p class="certificate-date">Dec 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>IT Security: Defense Against the Digital Dark Arts</h3>
+            <p class="certificate-issuer">Coursera</p>
+            <p class="certificate-date">Dec 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>System Administration and IT Infrastructure Services</h3>
+            <p class="certificate-issuer">Coursera</p>
+            <p class="certificate-date">Dec 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>AWS Cloud Fundamentals</h3>
+            <p class="certificate-issuer">DaCodes</p>
+            <p class="certificate-date">Nov 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Actualizate: Herramientas para la nueva Empleabilidad</h3>
+            <p class="certificate-issuer">Telefonica</p>
+            <p class="certificate-date">Nov 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Operating Systems and You: Becoming a Power User</h3>
+            <p class="certificate-issuer">Coursera</p>
+            <p class="certificate-date">Nov 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>The Bits and Bytes of Computer Networking</h3>
+            <p class="certificate-issuer">Coursera</p>
+            <p class="certificate-date">Oct 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Aspectos basicos de la asistencia tecnica</h3>
+            <p class="certificate-issuer">Coursera</p>
+            <p class="certificate-date">Oct 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>English C1 Proficiency Level</h3>
+            <p class="certificate-issuer">iTEP International</p>
+            <p class="certificate-date">Oct 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Python Fundamentals</h3>
+            <p class="certificate-issuer">DaCodes</p>
+            <p class="certificate-date">Oct 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Curso de Docker</h3>
+            <p class="certificate-issuer">Platzi</p>
+            <p class="certificate-date">Sep 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Curso de Fundamentos de Python</h3>
+            <p class="certificate-issuer">Platzi</p>
+            <p class="certificate-date">Aug 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Generative AI Foundations</h3>
+            <p class="certificate-issuer">DaCodes</p>
+            <p class="certificate-date">Jul 2023</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Gestion de Proyectos con Metodologias Agiles y Enfoques Lean</h3>
+            <p class="certificate-issuer">Telefonica</p>
+            <p class="certificate-date">Oct 2022</p>
+          </article>
+
+          <article class="certificate-card">
+            <h3>Introduccion al Machine Learning</h3>
+            <p class="certificate-issuer">Fundacion Telefonica</p>
+            <p class="certificate-date">Jul 2020</p>
+          </article>
+        </div>
+      </div>
+
+      <button class="carousel-btn next" id="certificates-next" type="button" aria-label="Siguiente certificado">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+  </section>
+
+  <section class="portfolio-section" id="portfolio">
+    <h2 class="section-title" data-i18n="portfolioSection.title">Portafolio</h2>
+    <p class="portfolio-text" data-i18n="portfolioSection.description">
+      Repositorio destacado con proyectos de Java.
+    </p>
+
+    <div class="repo-feature-grid">
+      <article class="repo-feature">
+        <div class="repo-feature-media" aria-hidden="true">
+          <img src="img/carpeta.jpg" alt="" />
+        </div>
+        <div class="repo-feature-content">
+          <h3 data-i18n="portfolio.item5">Java Projects</h3>
+          <a
+            class="repo-link"
+            href="https://github.com/bylev/Java-Projects"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="portfolio.openRepo"
+          >
+            Ver repositorio
+          </a>
+        </div>
+      </article>
+
+      <article class="repo-feature">
+        <div class="repo-feature-media" aria-hidden="true">
+          <img src="img/carpeta.jpg" alt="" />
+        </div>
+        <div class="repo-feature-content">
+          <h3 data-i18n="portfolio.item6">Repositorio ED Project</h3>
+          <a
+            class="repo-link"
+            href="https://github.com/bylev/ED_Project"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="portfolio.openRepo"
+          >
+            Ver repositorio
+          </a>
+        </div>
+      </article>
+
+      <article class="repo-feature">
+        <div class="repo-feature-media" aria-hidden="true">
+          <img src="img/carpeta.jpg" alt="" />
+        </div>
+        <div class="repo-feature-content">
+          <h3 data-i18n="portfolio.item7">Repositorio Portafolio de evidencias</h3>
+          <a
+            class="repo-link"
+            href="https://github.com/bylev/Portafolio-de-evidencias"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="portfolio.openRepo"
+          >
+            Ver repositorio
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="portfolio" id="galeria">
+    <h2 class="section-title" data-i18n="portfolio.title" data-i18n-html="true">Mi <span>Galeria</span></h2>
+    <p class="portfolio-text" data-i18n="portfolio.description">
+      Proyectos en los que he participado.
+    </p>
+
+    <div class="portfolio-carousel" id="portfolio-carousel">
+      <button class="carousel-btn prev" id="portfolio-prev" type="button" aria-label="Proyecto anterior">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+
+      <div class="portfolio-viewport">
+        <div class="portfolio-track" id="portfolio-track">
+          <article class="portfolio-card">
+            <img id="iftp-gallery-image" class="iftp-gallery-image" src="img/IFTP/IFTP1.jpg" alt="IFTP2026" />
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item1">IFTP2026</h3>
+              <p data-i18n="portfolio.desc1">Gane 3er lugar.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <img id="buildathon-gallery-image" class="iftp-gallery-image" src="img/Buildathon/B1.jpg" alt="Buildathon" />
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item3">Buildathon</h3>
+              <p data-i18n="portfolio.desc3">Gane 2do lugar.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <img id="ai-gallery-image" class="iftp-gallery-image" src="img/AI Course/AI1.jpg" alt="AI Course" />
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item2">AI Course</h3>
+              <p data-i18n="portfolio.desc2">Gane 2do lugar.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <img id="it-google-gallery-image" class="iftp-gallery-image" src="img/IT Google/IT1.jpg" alt="IT Google" />
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item4">IT Google</h3>
+              <p data-i18n="portfolio.desc4">Participe en el curso.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <button class="carousel-btn next" id="portfolio-next" type="button" aria-label="Siguiente proyecto">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+  </section>
+
+  <section class="contacts" id="contact">
+    <h2 class="section-title" data-i18n="contactSection.title" data-i18n-html="true">Mis <span>Contactos</span></h2>
+    <p class="portfolio-text" data-i18n="contactSection.description">
+      Puedes encontrarme en estas plataformas.
+    </p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="https://www.linkedin.com/in/michelle-c%C3%A1mara-gonz%C3%A1lez-a55a1421b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in contact-icon linkedin" aria-hidden="true"></i>
+        <h3>LinkedIn</h3>
+        <p data-i18n="contactSection.linkedin">Conecta conmigo profesionalmente</p>
+      </a>
+
+      <a class="contact-card" href="https://github.com/bylev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img class="contact-logo" src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub logo" />
+        <h3>GitHub</h3>
+        <p data-i18n="contactSection.github">Revisa mis proyectos y repositorios</p>
+      </a>
+
+      <a class="contact-card" href="mailto:cgmichelle01@gmail.com?cc=michelle.camara@tecdesoftware.edu.mx" aria-label="Gmail">
+        <i class="fa-solid fa-envelope contact-icon gmail" aria-hidden="true"></i>
+        <h3>Gmail</h3>
+        <p data-i18n="contactSection.gmail">Escribeme para colaboraciones</p>
+        <span class="contact-meta">cgmichelle01@gmail.com</span>
+        <span class="contact-meta">michelle.camara@tecdesoftware.edu.mx</span>
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
